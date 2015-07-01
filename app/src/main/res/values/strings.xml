@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">AdminSearchRestaurant</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_welcome">Administrador</string>
+    <string name="action_access">Acceder</string>
+
+    <string name="title_activity_error_welcome">Error</string>
+    <string name="message_error_welcome_conecction">Hay un problema con su conección a Internet</string>
+
+    <string name="title_activity_login">Login</string>
+    <string name="action_add_user">Agregar Usuario</string>
+
+
+    <string name="title_activity_new_user">Nuevo Usuario</string>
+    <string name="subtitle_basic_information">Información Básica</string>
+    <string name="subtitle_sede">Sede</string>
+    <string name="subtitle_account">Cuenta</string>
+    <string name="action_add">Agregar</string>
+
+    <string name="title_activity_confirmation_add_user">Usuario</string>
+    <string name="message_success_confirmation">Su información ha sido registrada correctamente. Por favor, inicie sesión </string>
+    <string name="action_login">Iniciar Sesión</string>
+
+
+
+
+
+    <string name="action_favorite">Marcar Favorito</string>
+
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <string name="girl_ipsum">
+        Morbi posuere lorem nec elit dapibus, vitae accumsan mauris pellentesque.
+        Vestibulum a lobortis mi. Vestibulum lacinia molestie semper. Pellentesque
+        ultrices arcu lacus, interdum mollis nibh convallis ut. Aliquam sagittis
+        sem a lacus gravida, eu accumsan purus volutpat. Donec tempus, est id
+        tristique consectetur, lacus ligula dignissim turpis, cursus commodo turpis
+        libero in purus. Phasellus tempus gravida tempor.
+    </string>
+        <string name="action_search">Buscar</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coditron.project.adminsearchrestaurant" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppThemeActionBar" >
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ErrorWelcomeActivity"
+            android:label="@string/title_activity_error_welcome" >
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".WelcomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.coditron.project.adminsearchrestaurant.WelcomeActivity" />
+        </activity>
+        <activity
+            android:name=".NewUserActivity"
+            android:label="@string/title_activity_new_user"
+
+            >
+        </activity>
+        <activity
+            android:name=".ConfirmationAddUserActivity"
+            android:label="@string/title_activity_confirmation_add_user"
+
+            >
+        </activity>
+    </application>
+
+</manifest>
