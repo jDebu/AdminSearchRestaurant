@@ -1,6 +1,7 @@
 package com.coditron.project.adminsearchrestaurant;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -22,8 +23,15 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         setToolbar();
-        if (getSupportActionBar()!=null)
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Button btnAddUser = (Button) findViewById(R.id.btn_add_user);
+        btnAddUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(LoginActivity.this,DashboardActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

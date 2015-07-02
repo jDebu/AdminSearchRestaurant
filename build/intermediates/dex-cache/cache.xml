@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\AdminSearchRestaurant\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="D:\AdminSearchRestaurant\app\build\intermediates\pre-dexed\debug\classes-2803b2ffd72f5a040723a4397642fde6ea469228.jar" />
+    </item>
+    <item
+        jar="D:\AdminSearchRestaurant\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="D:\AdminSearchRestaurant\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-0f125714adf5e5152fc87bced6fef845bb4ef258.jar" />
+    </item>
+    <item
+        jar="C:\Users\jose\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="D:\AdminSearchRestaurant\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-cbdee89142b427f4702c9f066a206382a99b6065.jar" />
+    </item>
+    <item
+        jar="C:\Users\jose\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.6.0\a7537446a030da8eb0da4c71424d16c2589f6c4a\glide-3.6.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a7537446a030da8eb0da4c71424d16c2589f6c4a">
+        <dex dex="D:\AdminSearchRestaurant\app\build\intermediates\pre-dexed\debug\glide-3.6.0-69b449bd6273b6e8de021d862a44301086d28773.jar" />
+    </item>
+    <item
+        jar="D:\AdminSearchRestaurant\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
+        <dex dex="D:\AdminSearchRestaurant\app\build\intermediates\pre-dexed\debug\classes-2ebfb045d7bd37a41dc4295c6cdd93ef1634dd1e.jar" />
+    </item>
+    <item
+        jar="D:\AdminSearchRestaurant\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="D:\AdminSearchRestaurant\app\build\intermediates\pre-dexed\debug\classes-d6a4ee665acd1d8e515d20a853a7461d6a7c25bf.jar" />
+    </item>
+    <item
+        jar="C:\Users\jose\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="D:\AdminSearchRestaurant\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1-99045f46fdfac18efc5a3c855e63a9d2fa63b7f0.jar" />
+    </item>
+    <item
+        jar="D:\AdminSearchRestaurant\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="97f7e239e86ef994de894818fdd8a71d2e89d6aa">
+        <dex dex="D:\AdminSearchRestaurant\app\build\intermediates\pre-dexed\debug\classes-400c3bf5615c2c0fc95b0b6cc6f58e3dedd61024.jar" />
+    </item>
+    <item
+        jar="D:\AdminSearchRestaurant\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="D:\AdminSearchRestaurant\app\build\intermediates\pre-dexed\debug\classes-eea565848e260dea3326153d05785313c7edc857.jar" />
+    </item>
+    <item
+        jar="D:\AdminSearchRestaurant\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="D:\AdminSearchRestaurant\app\build\intermediates\pre-dexed\debug\classes-efee7b3426e909840fd60f7a0907e8c5b7983199.jar" />
+    </item>
+
+</items>

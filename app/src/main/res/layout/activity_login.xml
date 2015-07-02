@@ -23,9 +23,7 @@
                 android:layout_height="152dp"
                 android:paddingLeft="24dp"
                 android:paddingRight="24dp"
-                android:scaleType="centerCrop"
-                />
-
+                android:scaleType="centerCrop" />
             <!-- Fragmento de form Iniciar Sesion -->
             <FrameLayout
                 android:visibility="gone"

@@ -20,26 +20,21 @@
             android:name=".ErrorWelcomeActivity"
             android:label="@string/title_activity_error_welcome" >
         </activity>
-
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"
-            android:parentActivityName=".WelcomeActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.coditron.project.adminsearchrestaurant.WelcomeActivity" />
+            android:label="@string/title_activity_login" >
         </activity>
         <activity
             android:name=".NewUserActivity"
-            android:label="@string/title_activity_new_user"
-
-            >
+            android:label="@string/title_activity_new_user" >
         </activity>
         <activity
             android:name=".ConfirmationAddUserActivity"
-            android:label="@string/title_activity_confirmation_add_user"
-
-            >
+            android:label="@string/title_activity_confirmation_add_user" >
+        </activity>
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/title_activity_dashboard" >
         </activity>
     </application>
 

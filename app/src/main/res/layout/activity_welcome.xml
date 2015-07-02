@@ -9,34 +9,34 @@
     android:id="@+id/title_welcome"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/title_activity_welcome"
+    android:text="@string/subtitle_activity_welcome"
     android:textSize="34sp"
     android:gravity="center"
     />
-<android.support.design.widget.TextInputLayout
+<TextView
     android:id="@+id/text_input_code"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@+id/title_welcome"
+    android:text="Ingrese código"
+    android:textSize="20sp"
     android:gravity="center"
-    >
-    <EditText
-        android:id="@+id/edit_code"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Ingrese codigo"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        />
+    android:layout_marginTop="24dp" />
+<EditText
+    android:id="@+id/edit_code"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:gravity="center"
+    android:layout_below="@+id/text_input_code" />
 
-</android.support.design.widget.TextInputLayout>
 <Button
     android:id="@+id/btn_access"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="@string/action_access"
-    android:layout_below="@+id/text_input_code"
-    android:layout_marginTop="8dp"
+    android:layout_below="@+id/edit_code"
+    android:layout_marginTop="16dp"
     android:onClick="submitCode" />
 
 </RelativeLayout>

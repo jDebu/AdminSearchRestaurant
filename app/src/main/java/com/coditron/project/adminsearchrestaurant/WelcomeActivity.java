@@ -24,7 +24,8 @@ public class WelcomeActivity extends AppCompatActivity {
         btnAccess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent= new Intent(WelcomeActivity.this,LoginActivity.class);
+                startActivity(intent);
             }
         });
     }
