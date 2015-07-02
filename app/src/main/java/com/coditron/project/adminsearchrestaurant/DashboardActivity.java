@@ -25,7 +25,7 @@ public class DashboardActivity extends ActionBarActivity {
             // Añadir carácteristicas
         }
 
-        drawerTitle = getResources().getString(R.string.home_item);
+        drawerTitle = getResources().getString(R.string.dashboard_item);
         if (savedInstanceState == null) {
             // Seleccionar item
         }

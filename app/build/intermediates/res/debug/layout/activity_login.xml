@@ -19,23 +19,28 @@
             android:padding="24dp">
             <ImageView
                 android:id="@+id/image_add_user"
-                android:layout_width="match_parent"
-                android:layout_height="152dp"
-                android:paddingLeft="24dp"
-                android:paddingRight="24dp"
-                android:scaleType="centerCrop" />
+                android:layout_width="132dp"
+                android:layout_height="132dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/quickcontactbadge"
+                />
             <!-- Fragmento de form Iniciar Sesion -->
             <FrameLayout
-                android:visibility="gone"
+                android:id="@+id/frame_start_session"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:visibility="gone">
             </FrameLayout>
             <Button
                 android:id="@+id/btn_add_user"
-                android:layout_width="match_parent"
+                android:layout_width="164dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/action_add_user"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="8dp"
+                android:textColor="@color/background_floating_material_light"
+                android:background="@color/primaryColor"/>
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
@@ -43,40 +48,23 @@
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         >
-        <!-- Collapser
-        <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/collapser"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:expandedTitleMarginEnd="64dp"
-            app:expandedTitleMarginStart="48dp"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"> -->
+
             <android.support.v7.widget.Toolbar
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@android:color/transparent"
+                android:background="?attr/colorPrimary"
                 android:title="@string/title_activity_login"
-                app:layout_collapseMode="pin"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                app:theme="@style/CustomActionBar"
-                >
-                <!--<TextView
-                    android:visibility="gone"
-                    android:id="@+id/title_login"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></TextView> -->
+                app:theme="@style/CustomActionBar">
             </android.support.v7.widget.Toolbar>
 
-        <!--</android.support.design.widget.CollapsingToolbarLayout> -->
+
 
     </android.support.design.widget.AppBarLayout>
 
 </android.support.design.widget.CoordinatorLayout>
-<!-- From: file:/D:/AdminSearchRestaurant/app/src/main/res/layout/activity_login.xml -->
+<!-- From: file:/home/estacion/AndroidStudioProjects/AdminSearchRestaurant/app/src/main/res/layout/activity_login.xml -->

@@ -17,11 +17,14 @@
     <string name="subtitle_basic_information">Información Básica</string>
     <string name="subtitle_sede">Sede</string>
     <string name="subtitle_account">Cuenta</string>
-    <string name="action_add">Agregar</string>
+    <string name="action_create_user">Crear Usuario</string>
 
     <string name="title_activity_confirmation_add_user">Usuario</string>
     <string name="message_success_confirmation">Su información ha sido registrada correctamente. Por favor, inicie sesión </string>
     <string name="action_login">Iniciar Sesión</string>
+
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_splash_login">Loading...</string>
 
 
     <string name="action_favorite">Marcar Favorito</string>
@@ -34,17 +37,31 @@
         libero in purus. Phasellus tempus gravida tempor.
     </string>
     <string name="action_search">Buscar</string>
+    <!-- drawerLayout-->
+    <!-- Solo Admin -->
+    <string name="users_item">Usuarios</string>
+    <string name="sedes_item">Sedes</string>
 
-    <string name="home_item">Home</string>
-    <string name="productos_item">Productos</string>
-    <string name="compras_item">Carrito</string>
-    <string name="ordenes_item">Ordenes</string>
-    <string name="facturas_item">Facturas</string>
-    <string name="log_out_item">Cerrar Sesión</string>
-    <string name="configuracion_item">Configuración</string>
-    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="dashboard_item">Principal</string>
+    <string name="info_item">Información</string>
+    <string name="today_menu_item">Menú del día</string>
+    <string name="special_menu_item">Nuestra Carta</string>
+    <string name="promotions_item">Promociones</string>
+    <string name="orders_item">Pedidos</string>
+    <string name="reservation_item">Reservas</string>
+
+    <string name="profile_item">Perfil</string>
+    <string name="close_session_item">Cerrar Sesión</string>
+
+    <!-- Spinner Choose Sede -->
+    <string-array name="Ciudades">
+        <item>Lima</item>
+        <item>Arequipa</item>
+        <item>Chimbote</item>
+        <item>Callao</item>
+    </string-array>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
 
     <string name="hello_world">Hello world!</string>
-
 
 </resources>

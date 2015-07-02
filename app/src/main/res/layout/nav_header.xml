@@ -13,12 +13,13 @@
         android:id="@+id/circle_image_perfil"
         android:layout_width="@dimen/perfil_image_size"
         android:layout_height="@dimen/perfil_image_size"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:scaleType="centerCrop"
         android:src="@drawable/perfil2"
         app:border_color="@android:color/white"
         app:border_width="1dp" />
-    <!-- Nombre de Usuario -->
+    <!-- Nombres y Apellidos de Usuario -->
     <TextView
         android:id="@+id/username"
         android:layout_width="match_parent"
@@ -27,13 +28,12 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textStyle="bold" />
 
-    <!-- Correo de la cuenta -->
+    <!-- Tipo de Usuario y Sede -->
     <TextView
-        android:id="@+id/email"
-        style="@style/Widget.AppCompat.Spinner"
+        android:id="@+id/text_type_sede"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="juanaperez01@gmail.com"
+        android:text="Administrador / Lima"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </LinearLayout>

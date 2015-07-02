@@ -11,7 +11,7 @@
         android:id="@+id/action_add"
         android:icon="@mipmap/ic_person_add"
         android:orderInCategory="1"
-        android:title="@string/action_add"
+        android:title="@string/action_add_user"
         app:showAsAction="ifRoom" />
 </menu>
-<!-- From: file:/D:/AdminSearchRestaurant/app/src/main/res/menu/menu_login.xml -->
+<!-- From: file:/home/estacion/AndroidStudioProjects/AdminSearchRestaurant/app/src/main/res/menu/menu_login.xml -->

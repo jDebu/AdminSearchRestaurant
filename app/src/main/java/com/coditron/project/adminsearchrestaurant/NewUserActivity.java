@@ -1,17 +1,65 @@
 package com.coditron.project.adminsearchrestaurant;
 
+import android.content.Intent;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
-public class NewUserActivity extends ActionBarActivity {
+public class NewUserActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_user);
+        setToolbar();
+        if (savedInstanceState == null)
+            displayAllFragments();
+
+
+    }
+
+    private void displayAllFragments() {
+        Fragment fragmentBasicInfo= new BasicInfoFragment();
+        if (fragmentBasicInfo!=null){
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.frame_basic_info, fragmentBasicInfo).commit();
+
+        }else{
+            Log.e("BasicInfoFragment","Failed create fragment");
+        }
+        Fragment fragmentPickSede= new PickSedeFragment();
+        if (fragmentPickSede!=null){
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.frame_sede, fragmentPickSede).commit();
+
+        }else{
+            Log.e("PickSedeFragment","Failed create fragment");
+        }
+        Fragment fragmentCreateAccount= new CreateAccountFragment();
+        if (fragmentCreateAccount!=null){
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.frame_account, fragmentCreateAccount).commit();
+
+        }else{
+            Log.e("CreateAccountFragment","Failed create fragment");
+        }
+    }
+
+    private void setToolbar() {
+        // Añadir la Toolbar
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) // Habilitar up button
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -23,12 +71,7 @@ public class NewUserActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }

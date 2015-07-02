@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.coditron.project.adminsearchrestaurant.BasicInfoFragment">
+    <RelativeLayout
+        android:id="@+id/layout_subtitle"
+        android:background="@color/subtitle_background"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        >
+        <TextView
+            android:id="@+id/text_subtitle"
+            android:text="@string/subtitle_basic_information"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/layout_subtitle"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edit_name"
+                android:hint="Nombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_input_name">
+            <EditText
+                android:id="@+id/edit_lastname"
+                android:hint="Apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_input_lastname">
+            <EditText
+                android:id="@+id/edit_phone"
+                android:hint="Celular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_direction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_input_phone">
+            <EditText
+                android:id="@+id/edit_direction"
+                android:hint="Dirección"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/home/estacion/AndroidStudioProjects/AdminSearchRestaurant/app/src/main/res/layout/fragment_basic_info.xml -->

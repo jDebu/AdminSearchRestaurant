@@ -2,16 +2,22 @@ package com.coditron.project.adminsearchrestaurant;
 
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import butterknife.Bind;
@@ -28,12 +34,32 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(LoginActivity.this,DashboardActivity.class);
+                Intent intent = new Intent(LoginActivity.this,NewUserActivity.class);
                 startActivity(intent);
             }
         });
+        displayFragmentLogin();
 
+    }
 
+    private void displayFragmentLogin() {
+        ImageView imgAddUser= (ImageView) findViewById(R.id.image_add_user);
+        FrameLayout frameLayoutStarSession = (FrameLayout) findViewById(R.id.frame_start_session);
+        if (getIntent().getExtras().getInt("enableUserRegister")==1){ /*habilitado login quitar imagen*/
+            imgAddUser.setVisibility(View.GONE);
+            frameLayoutStarSession.setVisibility(View.VISIBLE);
+            Fragment fragmentLogin = new LoginFragment();
+            if (fragmentLogin!=null){
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.frame_start_session, fragmentLogin).commit();
+
+            }else{
+                Log.e("LoginFragment", "Failed create fragment");
+            }
+        }else{
+            imgAddUser.setVisibility(View.VISIBLE);
+            frameLayoutStarSession.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -61,7 +87,6 @@ public class LoginActivity extends AppCompatActivity {
         // Añadir la Toolbar
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
     }
 }

@@ -1,7 +1,9 @@
 package com.coditron.project.adminsearchrestaurant;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -12,6 +14,30 @@ public class ConfirmationAddUserActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirmation_add_user);
+        setToolbar();
+
+        Thread timerThread= new Thread(){
+            public void run(){
+                try{
+                    sleep(3000);
+                }catch (InterruptedException e) {
+                    e.printStackTrace();
+                }finally {
+                    Intent intent= new Intent(ConfirmationAddUserActivity.this,LoginActivity.class);
+                    intent.putExtra("enableUserRegister",1);
+                    startActivity(intent);
+                }
+            }
+        };
+        timerThread.start();
+
+    }
+    private void setToolbar() {
+        // Añadir la Toolbar
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) // Habilitar up button
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -34,5 +60,10 @@ public class ConfirmationAddUserActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    @Override
+    protected  void onPause(){
+        super.onPause();
+        finish();
     }
 }

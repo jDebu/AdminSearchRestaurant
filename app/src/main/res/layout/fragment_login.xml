@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_email"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp">
+        <EditText
+            android:id="@+id/edit_email"
+            android:hint="Correo electronico"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_password"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp">
+        <EditText
+            android:id="@+id/edit_password"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_marginTop="8dp"
+        android:padding="1dp"
+        android:id="@+id/btn_start_session"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_login"
+        android:textColor="@color/background_floating_material_light"
+        android:background="@color/accentColor"/>
+
+
+</LinearLayout>

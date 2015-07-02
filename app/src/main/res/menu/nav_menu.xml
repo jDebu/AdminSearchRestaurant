@@ -6,33 +6,37 @@
             android:id="@+id/nav_home"
             android:checked="true"
             android:icon="@drawable/ic_home"
-            android:title="@string/home_item" />
+            android:title="@string/users_item" />
         <item
             android:id="@+id/nav_productos"
             android:icon="@drawable/ic_store"
-            android:title="@string/productos_item" />
+            android:title="@string/sedes_item" />
         <item
             android:id="@+id/nav_carrito"
             android:icon="@drawable/ic_shopping_cart"
-            android:title="@string/compras_item" />
+            android:title="@string/dashboard_item" />
         <item
             android:id="@+id/nav_ordenes"
             android:icon="@drawable/ic_truck"
-            android:title="@string/ordenes_item" />
+            android:title="@string/info_item" />
         <item
             android:id="@+id/nav_facturas"
             android:icon="@drawable/ic_file_document"
-            android:title="@string/facturas_item" />
+            android:title="@string/today_menu_item" />
 
         <!-- Sección de configuración -->
         <item
             android:id="@+id/configuration_section"
-            android:title="@string/configuracion_item">
+            android:title="Configuraciones">
             <menu>
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@android:drawable/ic_dialog_info"
+                    android:title="@string/profile_item" />
                 <item
                     android:id="@+id/nav_log_out"
                     android:icon="@android:drawable/ic_lock_power_off"
-                    android:title="@string/log_out_item" />
+                    android:title="@string/close_session_item" />
             </menu>
         </item>
     </group>

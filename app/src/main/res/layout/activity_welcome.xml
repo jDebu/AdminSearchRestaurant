@@ -31,12 +31,14 @@
     android:layout_below="@+id/text_input_code" />
 
 <Button
+
     android:id="@+id/btn_access"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="@string/action_access"
     android:layout_below="@+id/edit_code"
     android:layout_marginTop="16dp"
-    android:onClick="submitCode" />
+    android:textColor="@color/background_floating_material_light"
+    android:background="@color/primaryColor"/>
 
 </RelativeLayout>

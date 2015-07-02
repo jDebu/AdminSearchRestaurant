@@ -32,15 +32,31 @@
         </activity>
         <activity
             android:name="com.coditron.project.adminsearchrestaurant.NewUserActivity"
-            android:label="@string/title_activity_new_user" >
+            android:label="@string/title_activity_new_user"
+            android:parentActivityName="com.coditron.project.adminsearchrestaurant.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.coditron.project.adminsearchrestaurant.LoginActivity" />
         </activity>
         <activity
             android:name="com.coditron.project.adminsearchrestaurant.ConfirmationAddUserActivity"
-            android:label="@string/title_activity_confirmation_add_user" >
+            android:label="@string/title_activity_confirmation_add_user"
+            android:parentActivityName="com.coditron.project.adminsearchrestaurant.NewUserActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.coditron.project.adminsearchrestaurant.NewUserActivity" />
         </activity>
         <activity
             android:name="com.coditron.project.adminsearchrestaurant.DashboardActivity"
             android:label="@string/title_activity_dashboard" >
+        </activity>
+        <activity
+            android:name="com.coditron.project.adminsearchrestaurant.SplashLoginActivity"
+            android:label="@string/title_activity_splash_login" >
+        </activity>
+        <activity
+            android:name="com.coditron.project.adminsearchrestaurant.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile" >
         </activity>
     </application>
 
