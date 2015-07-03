@@ -1,4 +1,4 @@
-package com.coditron.project.adminsearchrestaurant;
+package com.coditron.project.adminsearchrestaurant.Views.Fragments;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+
+import com.coditron.project.adminsearchrestaurant.R;
 
 
 public class BasicInfoFragment extends Fragment {

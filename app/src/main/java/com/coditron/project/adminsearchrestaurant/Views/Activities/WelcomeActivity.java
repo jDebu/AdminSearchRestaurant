@@ -1,4 +1,4 @@
-package com.coditron.project.adminsearchrestaurant;
+package com.coditron.project.adminsearchrestaurant.Views.Activities;
 
 
 import android.content.Intent;
@@ -9,9 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
+import com.coditron.project.adminsearchrestaurant.R;
 
 
 public class WelcomeActivity extends AppCompatActivity {

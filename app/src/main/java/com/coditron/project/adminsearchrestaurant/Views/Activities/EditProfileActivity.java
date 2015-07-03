@@ -1,9 +1,11 @@
-package com.coditron.project.adminsearchrestaurant;
+package com.coditron.project.adminsearchrestaurant.Views.Activities;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.coditron.project.adminsearchrestaurant.R;
 
 
 public class EditProfileActivity extends ActionBarActivity {

@@ -1,12 +1,8 @@
-package com.coditron.project.adminsearchrestaurant;
+package com.coditron.project.adminsearchrestaurant.Views.Activities;
 
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.Toolbar;
@@ -18,9 +14,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-import butterknife.Bind;
+import com.coditron.project.adminsearchrestaurant.R;
+import com.coditron.project.adminsearchrestaurant.Views.Fragments.LoginFragment;
 
 
 public class LoginActivity extends AppCompatActivity {
