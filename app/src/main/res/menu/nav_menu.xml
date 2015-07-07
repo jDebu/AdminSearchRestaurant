@@ -6,22 +6,27 @@
             android:id="@+id/nav_home"
             android:checked="true"
             android:icon="@drawable/ic_home"
+            android:numericShortcut="0"
             android:title="@string/users_item" />
         <item
             android:id="@+id/nav_productos"
             android:icon="@drawable/ic_store"
+            android:numericShortcut="1"
             android:title="@string/sedes_item" />
         <item
             android:id="@+id/nav_carrito"
             android:icon="@drawable/ic_shopping_cart"
+            android:numericShortcut="2"
             android:title="@string/dashboard_item" />
         <item
             android:id="@+id/nav_ordenes"
             android:icon="@drawable/ic_truck"
+            android:numericShortcut="3"
             android:title="@string/info_item" />
         <item
             android:id="@+id/nav_facturas"
             android:icon="@drawable/ic_file_document"
+            android:numericShortcut="4"
             android:title="@string/today_menu_item" />
 
         <!-- Sección de configuración -->
@@ -32,10 +37,12 @@
                 <item
                     android:id="@+id/nav_profile"
                     android:icon="@android:drawable/ic_dialog_info"
+                    android:numericShortcut="5"
                     android:title="@string/profile_item" />
                 <item
                     android:id="@+id/nav_log_out"
                     android:icon="@android:drawable/ic_lock_power_off"
+                    android:numericShortcut="6"
                     android:title="@string/close_session_item" />
             </menu>
         </item>

@@ -9,7 +9,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.coditron.project.adminsearchrestaurant.R;
-import com.coditron.project.adminsearchrestaurant.SplashLoginActivity;
+import com.coditron.project.adminsearchrestaurant.Views.Activities.SplashLoginActivity;
+import com.coditron.project.adminsearchrestaurant.Views.Activities.VerifyCodeRecoverPassActivity;
 
 /**
  * Created by estacion on 02/07/15.
@@ -36,6 +37,15 @@ public class LoginFragment extends Fragment {
                 Intent intent = new Intent(getActivity(),SplashLoginActivity.class);
                 startActivity(intent);
 
+            }
+        });
+        Button btnRecoverPassword = (Button) getActivity().findViewById(R.id.btn_recover_password);
+        btnRecoverPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getActivity(),VerifyCodeRecoverPassActivity.class);
+                startActivity(intent);
             }
         });
     }

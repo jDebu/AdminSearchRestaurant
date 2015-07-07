@@ -350,8 +350,10 @@
     <string name="action_access">Acceder</string>
     <string name="action_add_user">Agregar Usuario</string>
     <string name="action_create_user">Crear Usuario</string>
+    <string name="action_edit_profile"><b>Editar</b></string>
     <string name="action_favorite">Marcar Favorito</string>
     <string name="action_login">Iniciar Sesión</string>
+    <string name="action_recover_password"><u>Recuperar contraseña</u></string>
     <string name="action_search">Buscar</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">AdminSearchRestaurant</string>
@@ -362,7 +364,6 @@
     <eat-comment/>
     <string name="close_session_item">Cerrar Sesión</string>
     <string name="dashboard_item">Principal</string>
-    <string name="hello_world">Hello world!</string>
     <string name="info_item">Información</string>
     <string name="lorem_ipsum">
         Morbi posuere lorem nec elit dapibus, vitae accumsan mauris pellentesque.
@@ -393,9 +394,11 @@
     <string name="title_activity_dashboard">Dashboard</string>
     <string name="title_activity_edit_profile">EditProfileActivity</string>
     <string name="title_activity_error_welcome">Error</string>
+    <string name="title_activity_input_new_pass">Cambiar Contraseña</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_new_user">Nuevo Usuario</string>
     <string name="title_activity_splash_login">Loading...</string>
+    <string name="title_activity_verify_code_recover_password">Código de Verificación</string>
     <string name="title_activity_welcome">Administrador</string>
     <string name="today_menu_item">Menú del día</string>
     <string name="users_item">Usuarios</string>
@@ -1733,6 +1736,15 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation"/>
+    <!-- From: file:/home/estacion/AndroidStudioProjects/AdminSearchRestaurant/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
     <!-- From: file:/home/estacion/AndroidStudioProjects/AdminSearchRestaurant/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.Design.AppBarLayout" parent="android:Widget">

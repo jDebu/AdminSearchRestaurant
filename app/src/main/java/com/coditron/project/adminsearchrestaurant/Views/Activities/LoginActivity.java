@@ -39,9 +39,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void displayFragmentLogin() {
+        Button btnAddUser = (Button) findViewById(R.id.btn_add_user);
         ImageView imgAddUser= (ImageView) findViewById(R.id.image_add_user);
         FrameLayout frameLayoutStarSession = (FrameLayout) findViewById(R.id.frame_start_session);
         if (getIntent().getExtras().getInt("enableUserRegister")==1){ /*habilitado login quitar imagen*/
+            btnAddUser.setVisibility(View.GONE);
             imgAddUser.setVisibility(View.GONE);
             frameLayoutStarSession.setVisibility(View.VISIBLE);
             Fragment fragmentLogin = new LoginFragment();
@@ -53,6 +55,7 @@ public class LoginActivity extends AppCompatActivity {
                 Log.e("LoginFragment", "Failed create fragment");
             }
         }else{
+            btnAddUser.setVisibility(View.VISIBLE);
             imgAddUser.setVisibility(View.VISIBLE);
             frameLayoutStarSession.setVisibility(View.GONE);
         }

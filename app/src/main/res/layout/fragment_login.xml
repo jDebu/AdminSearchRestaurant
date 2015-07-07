@@ -28,7 +28,7 @@
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
     <Button
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:padding="1dp"
         android:id="@+id/btn_start_session"
         android:layout_width="match_parent"
@@ -36,6 +36,18 @@
         android:text="@string/action_login"
         android:textColor="@color/background_floating_material_light"
         android:background="@color/accentColor"/>
+    <Button
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:padding="1dp"
+        android:background="@null"
+        android:id="@+id/btn_recover_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_recover_password"
+        android:textColor="@color/accentColor"
+        android:textAllCaps="false"
+        />
 
 
 </LinearLayout>

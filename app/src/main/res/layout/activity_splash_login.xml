@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_material_dark"
-    tools:context="com.coditron.project.adminsearchrestaurant.SplashLoginActivity">
+    tools:context="com.coditron.project.adminsearchrestaurant.Views.Activities.SplashLoginActivity">
     <ImageView
         android:layout_gravity="center"
         android:src="@drawable/splash_message"

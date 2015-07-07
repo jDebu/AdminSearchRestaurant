@@ -1,45 +1,85 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".WelcomeActivity">
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/coordinator"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+    >
+<!-- Objeto Scroll -->
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/app_bar"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
 
-<TextView
-    android:id="@+id/title_welcome"
+        <TextView
+            android:id="@+id/title_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle_activity_welcome"
+            android:textSize="34sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/text_input_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_welcome"
+            android:text="Ingrese código"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp" />
+        <EditText
+            android:id="@+id/edit_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_below="@+id/text_input_code" />
+
+        <Button
+
+            android:id="@+id/btn_access"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_access"
+            android:layout_below="@+id/edit_code"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/background_floating_material_light"
+            android:background="@color/primaryColor"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
+<!-- AppBar -->
+<android.support.design.widget.AppBarLayout
+    android:id="@+id/app_bar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/subtitle_activity_welcome"
-    android:textSize="34sp"
-    android:gravity="center"
-    />
-<TextView
-    android:id="@+id/text_input_code"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/title_welcome"
-    android:text="Ingrese código"
-    android:textSize="20sp"
-    android:gravity="center"
-    android:layout_marginTop="24dp" />
-<EditText
-    android:id="@+id/edit_code"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
-    android:gravity="center"
-    android:layout_below="@+id/text_input_code" />
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <!-- Toolbar -->
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="@string/app_name"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/CustomActionBar">
 
-<Button
+    </android.support.v7.widget.Toolbar>
 
-    android:id="@+id/btn_access"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/action_access"
-    android:layout_below="@+id/edit_code"
-    android:layout_marginTop="16dp"
-    android:textColor="@color/background_floating_material_light"
-    android:background="@color/primaryColor"/>
+</android.support.design.widget.AppBarLayout>
 
-</RelativeLayout>
-<!-- From: file:/home/estacion/AndroidStudioProjects/AdminSearchRestaurant/app/src/main/res/layout/activity_welcome.xml -->
+</android.support.design.widget.CoordinatorLayout><!-- From: file:/home/estacion/AndroidStudioProjects/AdminSearchRestaurant/app/src/main/res/layout/activity_welcome.xml -->

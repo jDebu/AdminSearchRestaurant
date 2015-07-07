@@ -22,11 +22,12 @@
     <string name="title_activity_confirmation_add_user">Usuario</string>
     <string name="message_success_confirmation">Su información ha sido registrada correctamente. Por favor, inicie sesión </string>
     <string name="action_login">Iniciar Sesión</string>
+    <string name="action_recover_password"><u>Recuperar contraseña</u></string>
 
     <string name="title_activity_dashboard">Dashboard</string>
     <string name="title_activity_splash_login">Loading...</string>
 
-
+    <string name="action_edit_profile"><b>Editar</b></string>
     <string name="action_favorite">Marcar Favorito</string>
     <string name="lorem_ipsum">
         Morbi posuere lorem nec elit dapibus, vitae accumsan mauris pellentesque.
@@ -62,6 +63,9 @@
     </string-array>
     <string name="title_activity_edit_profile">EditProfileActivity</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_verify_code_recover_password">Código de Verificación</string>
+    <string name="title_activity_input_new_pass">Cambiar Contraseña</string>
+
+
 
 </resources>
